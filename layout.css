@@ -1,0 +1,12 @@
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (min-width: 800px) {
+  .category_list_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}

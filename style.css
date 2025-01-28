@@ -3,3 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.category_list_container h3 {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  font-family: "Lunasima", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0rem);
+  color: red;
+}
+
+.logo {
+  font-size: 3rem;
+  padding-top: 2rem;
+  font-family: "Lunasima", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: "Lunasima", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 800px) {
+  .category_list_container h3 {
+    padding: 3rem;
+  }
+}
