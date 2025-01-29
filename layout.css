@@ -11,16 +11,15 @@
   gap: 15px;
 }
 
-.container img {
-  max-width: 100%;
-  padding-top: 3rem;
-}
-
 .box {
   display: grid;
   grid-template-rows: subgrid;
   gap: 15px;
   grid-row: span 5;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 800px) {
@@ -32,5 +31,12 @@
   .container {
     grid-template-columns: repeat(4, 1fr); /* Fire kolonner på store skærme */
     grid-template-rows: repeat(5, auto); /* Skal stadig have rækker */
+  }
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_1-1 img {
+    max-width: 80%;
   }
 }
