@@ -59,4 +59,9 @@ h2 {
   .category_list_container h3 {
     padding: 3rem;
   }
+
+  body {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
 }
