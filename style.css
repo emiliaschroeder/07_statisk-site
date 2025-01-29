@@ -55,6 +55,62 @@ h2 {
   font-style: normal;
 }
 
+.click:hover {
+  text-decoration: underline;
+}
+
+.container img:hover {
+  transform: scale(1.01);
+}
+
+.box-1 img {
+  opacity: 40%;
+}
+
+.opacity {
+  opacity: 40%;
+}
+
+.discount {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.ny-pris {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.gammel-pris {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.image-container {
+  position: relative; /* Allows absolute positioning inside */
+  display: inline-block; /* Keeps size only as large as the image */
+}
+.sale {
+  position: absolute;
+  top: 65px; /* Adjust as needed */
+  left: 15px; /* Adjust as needed */
+  background: #d32f2f; /* Semi-transparent background */
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.sold-out {
+  position: absolute;
+  top: 65px; /* Adjust as needed */
+  left: 15px; /* Adjust as needed */
+  background: gray; /* Semi-transparent background */
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  opacity: 100%;
+}
+
 @media (min-width: 800px) {
   .category_list_container h3 {
     padding: 3rem;
