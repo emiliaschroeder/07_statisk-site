@@ -7,6 +7,7 @@
 body {
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-bottom: 3rem;
 }
 
 .category_list_container {
@@ -27,6 +28,11 @@ h3 {
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
+h4 {
+  font-family: "Lunasima", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 a {
   text-decoration: none;
@@ -45,6 +51,7 @@ a {
   font-family: "Lunasima", serif;
   font-weight: 700;
   font-style: normal;
+  padding-bottom: 2rem;
 }
 
 h2 {
@@ -56,6 +63,9 @@ h2 {
 }
 
 .click:hover {
+  color: gray;
+}
+.click {
   text-decoration: underline;
 }
 
@@ -93,7 +103,7 @@ h2 {
 }
 .sale {
   position: absolute;
-  top: 65px; /* Adjust as needed */
+  top: 15px; /* Adjust as needed */
   left: 15px; /* Adjust as needed */
   background: #d32f2f; /* Semi-transparent background */
   color: white;
@@ -102,7 +112,7 @@ h2 {
 }
 .sold-out {
   position: absolute;
-  top: 65px; /* Adjust as needed */
+  top: 15px; /* Adjust as needed */
   left: 15px; /* Adjust as needed */
   background: gray; /* Semi-transparent background */
   color: white;
@@ -115,12 +125,12 @@ img {
   max-width: 100%;
 }
 
-.container img {
+/* .container img {
   padding-top: 3rem;
-}
+} */
 
 .buy {
-  background-color: black;
+  background-color: #d32f2f;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -129,6 +139,10 @@ img {
 }
 
 .hover :hover {
+  transform: scale(1.01);
+}
+
+.hover1 :hover {
   transform: scale(1.01);
 }
 
