@@ -1,0 +1,42 @@
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 15px;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: subgrid;
+  gap: 15px;
+  grid-row: span 5;
+}
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .category_list_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, 1fr); /* Fire kolonner på store skærme */
+    grid-template-rows: repeat(5, auto); /* Skal stadig have rækker */
+  }
+  .productContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .productContainer img {
+    max-width: 80%;
+  }
+}
