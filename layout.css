@@ -17,7 +17,7 @@
   gap: 15px;
   grid-row: span 5;
 }
-.grid_1-1 {
+.productContainer {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -32,11 +32,11 @@
     grid-template-columns: repeat(4, 1fr); /* Fire kolonner på store skærme */
     grid-template-rows: repeat(5, auto); /* Skal stadig have rækker */
   }
-  .grid_1-1 {
+  .productContainer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid_1-1 img {
+  .productContainer img {
     max-width: 80%;
   }
 }

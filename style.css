@@ -146,15 +146,15 @@ img {
   transform: scale(1.01);
 }
 
-.grid_1-1 img {
+.productContainer img {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.grid_1-1 h2 {
+.productContainer h2 {
   padding-bottom: 0;
 }
 
-.grid_1-1 p {
+.productContainer p {
   line-height: 25px;
   padding-top: 0.7rem;
 }
@@ -182,7 +182,7 @@ p {
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-.grid_1-1 p {
+.productContainer p {
   line-height: 220%;
 }
 
