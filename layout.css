@@ -16,6 +16,7 @@
   grid-template-rows: subgrid;
   gap: 15px;
   grid-row: span 5;
+  padding-bottom: 2rem;
 }
 .productContainer {
   display: grid;
