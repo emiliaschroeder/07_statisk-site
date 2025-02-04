@@ -1,7 +1,7 @@
+const productId = new URLSearchParams(window.location.search).get("id");
+console.log("product loader...", productId);
+
 let productContainer = document.querySelector(".productContainer");
-// Tag fat i den rigtige container class^
-// Produkt id variabel
-let productId = 1577;
 
 // Henter JSON fil og får adgang til dens data:
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
