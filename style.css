@@ -4,62 +4,82 @@
   box-sizing: border-box;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.isOnSale {
+  visibility: hidden;
+}
+.isSoldOut {
+  visibility: hidden;
+}
+
 body {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
 }
 
-.category_list_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
 .category_list_container h3 {
-  border: 1px solid black;
   text-align: center;
   padding: 1rem;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: black;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 h3 {
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.5rem);
+  text-transform: lowercase;
 }
 h4 {
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: lowercase;
 }
 
 a {
   text-decoration: none;
   color: black;
+  text-transform: lowercase;
 }
 
 .logo span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0rem);
-  color: #d32f2f;
+  color: #a22222;
+  text-transform: uppercase;
 }
 
 .logo {
   font-size: 3rem;
   padding-top: 2rem;
-  font-family: "Lunasima", serif;
-  font-weight: 700;
+  font-family: "Inter", serif;
+  font-weight: 800;
   font-style: normal;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 h2 {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: lowercase;
+}
+
+.upper {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(2rem, 3vw, 5rem);
 }
 
 .click:hover {
@@ -73,11 +93,11 @@ h2 {
   transform: scale(1.01);
 }
 
-.box-1 img {
+/* .box-1 img {
   opacity: 40%;
-}
+} */
 
-.opacity {
+.sold-out-card .opacity {
   opacity: 40%;
 }
 
@@ -89,12 +109,33 @@ h2 {
 
 .ny-pris {
   font-weight: bold;
-  color: #d32f2f;
+  color: #a22222;
+}
+.ny-pris2 {
+  font-weight: bold;
+  color: #a22222;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .gammel-pris {
   text-decoration: line-through;
   color: gray;
+}
+.gammel-pris2 {
+  text-decoration: line-through;
+  color: gray;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.regular-price {
+  color: black; /* Regular price is black */
+  font-weight: normal;
+}
+
+.regular-price2 {
+  color: black; /* Regular price is black */
+  font-weight: normal;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .image-container {
@@ -103,22 +144,52 @@ h2 {
 }
 .sale {
   position: absolute;
-  top: 15px; /* Adjust as needed */
-  left: 15px; /* Adjust as needed */
-  background: #d32f2f; /* Semi-transparent background */
+  top: 15px;
+  left: 15px;
+  background: #a22222;
+  border-radius: 50px;
   color: white;
   padding: 10px 15px;
   font-weight: bold;
+  visibility: visible;
 }
+
+.isOnSale {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  background: #a22222;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  visibility: visible;
+}
+
+.isSoldOut {
+  position: absolute;
+  top: 30px; /* Adjust as needed */
+  left: 15px; /* Adjust as needed */
+  background: gray; /* Semi-transparent background */
+  border-radius: 50px;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  opacity: 100%;
+  visibility: visible;
+}
+
 .sold-out {
   position: absolute;
   top: 15px; /* Adjust as needed */
   left: 15px; /* Adjust as needed */
   background: gray; /* Semi-transparent background */
+  border-radius: 50px;
   color: white;
   padding: 10px 15px;
   font-weight: bold;
   opacity: 100%;
+  visibility: visible;
 }
 
 img {
@@ -130,20 +201,43 @@ img {
 } */
 
 .buy {
-  background-color: #d32f2f;
-  color: white;
+  border: 1.5px solid black; /* Default border */
+  color: black;
   text-align: center;
   padding: 1rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  border-radius: 50px;
+  transition: border 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
-.hover :hover {
-  transform: scale(1.01);
+.buy :hover {
+  color: #a22222;
 }
 
-.hover1 :hover {
-  transform: scale(1.01);
+.buy:hover {
+  border: 1.5px solid #a22222; /* Default border */
+  color: black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+}
+
+.red-hover {
+  border: 1.5px solid black; /* Default border */
+  border-radius: 50px;
+  transition: border 0.3s ease, color 0.3s ease;
+  color: black;
+}
+
+.red-hover :hover {
+  color: #a22222;
+}
+
+.red-hover:hover {
+  border: 1.5px solid #a22222;
 }
 
 .productContainer img {
@@ -160,26 +254,29 @@ img {
 }
 
 h5 {
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.3rem);
   color: gray;
+  text-transform: lowercase;
 }
 
 h6 {
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.3rem);
   padding-top: 1rem;
+  text-transform: lowercase;
 }
 
 p {
-  font-family: "Lunasima", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.8rem, 2vw, 1rem);
+  text-transform: lowercase;
 }
 
 .productContainer p {
@@ -189,6 +286,35 @@ p {
 .price {
   padding-top: 2rem;
 }
+
+button {
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-transform: lowercase;
+  display: inline-block;
+  border: solid 1px black;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  border: solid 1px #a22222;
+  color: #a22222;
+}
+
+/* .filter p {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: bold;
+} */
 
 @media (min-width: 800px) {
   .category_list_container h3 {
@@ -203,5 +329,16 @@ p {
   .pad-top {
     align-content: center;
     padding-right: 3rem;
+  }
+
+  button {
+    padding: 10px;
+    border: solid 1.5px black;
+    margin-right: 10px;
+    margin-bottom: 1.5rem;
+  }
+  button:hover {
+    border: solid 1.5px #a22222;
+    color: #a22222;
   }
 }
