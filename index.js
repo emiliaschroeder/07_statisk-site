@@ -14,7 +14,7 @@ function showCategory(data) {
     // For hvert produkt putter jeg et nyt produkt ind der hedder "markup"
     .map(
       (element) => `
-   <div class="hover1">
+   <div class="red-hover">
         <a href="produktliste.html?category=${element.category}"><h3>${element.category}</h3></a>
       </div>
     `
