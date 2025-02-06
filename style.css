@@ -109,11 +109,11 @@ h2 {
 
 .ny-pris {
   font-weight: bold;
-  color: #d32f2f;
+  color: #a22222;
 }
 .ny-pris2 {
   font-weight: bold;
-  color: #d32f2f;
+  color: #a22222;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -209,6 +209,7 @@ img {
   margin-top: 1rem;
   border-radius: 50px;
   transition: border 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .buy :hover {
@@ -286,6 +287,35 @@ p {
   padding-top: 2rem;
 }
 
+button {
+  font-family: "Inter", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-transform: lowercase;
+  display: inline-block;
+  border: solid 1px black;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  border: solid 1px #a22222;
+  color: #a22222;
+}
+
+/* .filter p {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: bold;
+} */
+
 @media (min-width: 800px) {
   .category_list_container h3 {
     padding: 3rem;
@@ -299,5 +329,16 @@ p {
   .pad-top {
     align-content: center;
     padding-right: 3rem;
+  }
+
+  button {
+    padding: 10px;
+    border: solid 1.5px black;
+    margin-right: 10px;
+    margin-bottom: 1.5rem;
+  }
+  button:hover {
+    border: solid 1.5px #a22222;
+    color: #a22222;
   }
 }

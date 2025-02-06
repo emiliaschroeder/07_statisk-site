@@ -24,6 +24,13 @@
   grid-template-columns: 1fr;
 }
 
+.filter {
+  display: flex;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 5px;
+}
+
 @media (min-width: 800px) {
   .category_list_container {
     grid-template-columns: repeat(2, 1fr);
