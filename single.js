@@ -16,7 +16,8 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
           src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp"
           alt="${data.productdisplayname}"
         />
-        ${data.discount ? `<p class="isOnSale">Sale ${data.discount}%</p>` : ""}
+
+        ${!data.soldout && data.discount ? `<p class="isOnSale">Sale ${data.discount}%</p>` : ""}
         ${data.soldout ? `<p class="isSoldOut">Sold out</p>` : ""}
       </div>
       
@@ -25,7 +26,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
         <h2>${data.productdisplayname} | ${data.basecolour}</h2>
 
         <p class="price">
-          ${data.discount ? `<span class="ny-pris2">${discountPrice.toFixed(2)} kr.</span> <span class="gammel-pris2">${data.price} kr.</span>` : `${data.price} kr.`}
+          ${data.discount ? `<span class="ny-pris2">${discountPrice.toFixed(2)} kr.</span> <span class="gammel-pris2">${data.price} kr.</span>` : `<span class="regular-price2">${data.price} kr.</span>`}
         </p>
 
         <div class="hover">

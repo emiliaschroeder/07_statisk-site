@@ -127,6 +127,17 @@ h2 {
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
+.regular-price {
+  color: black; /* Regular price is black */
+  font-weight: normal;
+}
+
+.regular-price2 {
+  color: black; /* Regular price is black */
+  font-weight: normal;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 .image-container {
   position: relative; /* Allows absolute positioning inside */
   display: inline-block; /* Keeps size only as large as the image */
